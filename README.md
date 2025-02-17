@@ -9,7 +9,7 @@
       5. In `dashboard` run `npm run dev` command to start front-end pages, and you should see  **✓ Starting..**. to indicate NextJS is running
       6. `cd server/` folder and run `npm install --save-dev nodemon` to install nodemon
       7. In `server` and run `npm run dev` command to start the server, you should see Server started successfully message to indicate the server is running
-      8. Go to [localhost:3000](http://localhost:3000), you should be able to enter the application
+      8. Go to [localhost:3000](http://localhost:3000) or other port number if 3000 is currently occupied, you should be able to enter the application
      
 
 - Code Architecture
