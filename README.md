@@ -2,7 +2,7 @@
 [Figma design](https://www.figma.com/design/TJC8pHuIZ3eLwg9cLv4iE7/Dashboard-Management?node-id=10-1239&t=QVYwkoAoxtFz5uQP-0)
 - This project is separated into front-end and back-end implementations. The front-end code (NextJS) is all organized into dashboard folder and the back-end code (ExpressJS) is organized into server folder. 
 - To run this project locally, simply follow the following steps
-    - 1. `git clone` this project and cd 
+    - 1. Run `git clone https://github.com/nancyyang277/DashboardProject.git` to clone the project and `cd DashboardProject/`
       2. Install the latest LTS version of Node.js using `nvm install --lts` and verify the version using `node -v`
       3. run `npm install` to install the packages inside `package.json` in both `/server` and `/dashboard` folder
       4. `cd dashboard/` folder run `vim .env` and add `NEXTAUTH_SECRET=secretvalue` or any random string to replace `secretvalue`
