@@ -1,4 +1,4 @@
-# Items Dashboard Management Local Project
+# Items Dashboard Local Project
 - This project is separated into front-end and back-end implementations. The front-end code (NextJS) is all organized into dashboard folder and the back-end code (Express) is organized into server folder. 
 - To run this project locally, simply follow the following steps
     - 1. `git clone` this project and cd 
