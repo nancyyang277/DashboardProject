@@ -34,6 +34,8 @@
     - managing global state and share data (such as authentication state, font style, storages info, user selector at the top right) across the component tree
   - `/util.js`
     - contains all the helper methods such as get the current timestamp, solution to action mapping
+  - middleware.js
+    - If a user tries to access `/board` without being logged in, they will be redirected to the login page
      
 - `/server` (back-end)
   - `/models`
