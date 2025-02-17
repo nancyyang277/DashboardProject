@@ -34,9 +34,6 @@ const ItemsTable = ({data}) => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        console.log("here");
-    
         if (!itemName || !itemSolution || !itemLocation) {
           setError("All fields are necessary.");
           return;

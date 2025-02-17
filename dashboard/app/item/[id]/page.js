@@ -35,7 +35,6 @@ const Page = async ({params}) => {
       } catch (error) {
         console.error("Error fetching item:", error);
       } 
-    console.log(data);
     const itemDetail = data.item_detail;
 
     return <ItemDetailClient 

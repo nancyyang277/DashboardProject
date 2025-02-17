@@ -8,7 +8,6 @@
     max-height: 700px; 
     overflow-y: auto;
     overflow-x: auto;
-    border-bottom: 1px solid #ddd;
   }
 
   .container {
