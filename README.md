@@ -1,4 +1,5 @@
 # Items Dashboard Local Project
+[Figma design](https://www.figma.com/design/TJC8pHuIZ3eLwg9cLv4iE7/Dashboard-Management?node-id=10-1239&t=QVYwkoAoxtFz5uQP-0)
 - This project is separated into front-end and back-end implementations. The front-end code (NextJS) is all organized into dashboard folder and the back-end code (ExpressJS) is organized into server folder. 
 - To run this project locally, simply follow the following steps
     - 1. `git clone` this project and cd 
