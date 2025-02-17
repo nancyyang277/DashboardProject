@@ -10,29 +10,6 @@ const DB = new sql3.Database('./dashboard.db', sqlite3.OPEN_READWRITE | sqlite3.
     }
 });
 
-const storages = [{"name": "Storage 1", "name": "Storage 2", "name": "Storage 3", "name": "Storage 4"}];
-const users = [{
-    "name": "Tabitha Ryne",
-    "email": "tabithaRyne@gmail.com",
-    "password": "securepassword",
-    "role": "Xemelgo Administrator"
-}, {
-    "name": "Claire Stroup",
-    "email": "claireStroup@gmail.com",
-    "password": "securepassword1",
-    "role": "Shop Manager"
-}, {
-    "name": "Curtis Trak",
-    "email": "curtisTrak@gmail.com",
-    "password": "securepassword2",
-    "role": "Shop Manager"
-}, {
-    "name": "Jacob Eld",
-    "email": "jacobEld@gmail.com",
-    "password": "securepassword3",
-    "role": "Shop Manager"
-}];
-
 // function to create tables
 const initDB = async () => {
     return new Promise((resolve, reject) => {
@@ -94,37 +71,6 @@ const initDB = async () => {
                         console.log('Table created successfully.');
                     }
                 });
-            });
-
-            // Insert default storages, can comment this out if re-start server
-            storages.forEach(storage => {
-                DB.run(
-                    `INSERT INTO storages (name) VALUES (?)`,
-                    [storage.name],
-                    (err) => {
-                        if (err) {
-                            console.log("Storage already exists or insert failed.");
-                        } else {
-                            console.log("Storage inserted:", storage.name);
-                        }
-                    }
-                );
-            });
-
-            // Insert default users with hashed passwords, can comment this out if re-start server
-            users.forEach(async (user) => {
-                const hashedPassword = await bcrypt.hash(user.password, 10);
-                DB.run(
-                    `INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)`,
-                    [user.name, user.email, hashedPassword, user.role],
-                    (err) => {
-                        if (err) {
-                            console.log(`User ${user.email} already exists or insert failed.`);
-                        } else {
-                            console.log(`User inserted: ${user.name}`);
-                        }
-                    }
-                );
             });
 
             resolve();

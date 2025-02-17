@@ -18,7 +18,6 @@ router.post('/actions', async (req, res) => {
 
         // returns in this format actions:[{modified_by: userId, username: user's name, timestamp: performed action's time, action: performed action}]
         const topSixResults = await getTopSixActionsAndLocations(action.item_id);
-        console.log(topSixResults, "aaalflf");
 
         res.status(201).json({ message: "Insert Successful", results: topSixResults, });
     } catch (error) {

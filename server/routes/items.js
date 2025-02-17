@@ -47,7 +47,6 @@ router.get('/items/item-detail/:itemId', async (req, res) => {
             username: 'Curtis Trak'
           }*/
         const item = await getDetails(itemId);
-        console.log(item, "aa");
 
         // returns in this format 
         // {actions:[{modified_by: userId, username: user's name, timestamp: performed action's time, action: performed action}, ...],

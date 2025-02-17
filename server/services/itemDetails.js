@@ -56,13 +56,11 @@ export async function addItem(item_name, solution, current_location, status) {
  * @param {*} location 
  */
 export async function updateItem(id, value, user, location) {
-    console.log(id, value, user, location, "here");
     try {
         // await updateItemStatus(
         //     id, value, user, location
         // );
         let UpdateResponse = await updateItemStatus(id, value, user, location);
-        console.log(UpdateResponse, 'aahd');
         return UpdateResponse;
     } catch (updateError) {
         console.error("Error updating item status:", updateError);

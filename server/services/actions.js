@@ -20,7 +20,6 @@ export async function insertItemAction(action) {
         await insertItemActionToDB(action);
 
         let UpdateResponse = await updateItemStatus(action.item_id, action.action, action.modified_by, action.dest_location);
-        console.log(UpdateResponse, 'aahd');
         return UpdateResponse; 
     } catch (error) {
         console.error("Error inserting action in service phase:", error);
