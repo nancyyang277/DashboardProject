@@ -32,6 +32,8 @@
     - the entry point of this project, it will take you to the login form if not logged in, otherwise will direct you to /board
   - `/context`
     - managing global state and share data (such as authentication state, font style, storages info, user selector at the top right) across the component tree
+  - `/service/`
+    - each file represents a service module that provides API request functions to interact with backend API by using a centralized request helper (in `api.js`) 
   - `/util.js`
     - contains all the helper methods such as get the current timestamp, solution to action mapping
   - `middleware.js`
