@@ -10,11 +10,8 @@ const ItemService = {
       });
   },
 
-  // id, value, user, location
-  // itemId, action, userId, newStorageName
+  // update item's status using itemId, action, userId, newStorageName
   updateOne: async function (id, value, selectedUserId, location_name) {
-    console.log("Updating Item with:", { id, value, selectedUserId, location_name });
-
     if (!id || !value || !selectedUserId || !location_name) {
         console.error("Missing parameters in updateOne");
         return { error: "Invalid input parameters" };
