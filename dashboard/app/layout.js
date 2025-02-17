@@ -8,9 +8,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{ fontFamily: '"Avenir Next", sans-serif' }}>
-      {/* <UserProvider> */}
-            <AuthProvider><UserProvider><StorageProvider><UserSelector/>{children}</StorageProvider></UserProvider></AuthProvider>  
-        {/* </UserProvider> */}
+        <AuthProvider><UserProvider><StorageProvider><UserSelector/>{children}</StorageProvider></UserProvider></AuthProvider>  
       </body>
     </html>
   );

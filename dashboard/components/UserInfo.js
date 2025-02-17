@@ -7,8 +7,7 @@ import styles from "./loginRegister.module.css";
 export default function UserInfo() {
   const { data: session } = useSession();
   return (
-    <div>
-      <div>
+    <div className={styles.logout}>
         <div>
           Name: <span>{session?.user?.name}</span>
         </div>
@@ -19,7 +18,6 @@ export default function UserInfo() {
             onClick={() => signOut()}>
               Log Out
           </button>
-      </div>
     </div>
   );
 }
