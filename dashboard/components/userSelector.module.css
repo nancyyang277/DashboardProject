@@ -1,0 +1,100 @@
+.userDropdown {
+    position: absolute;
+    right: 400px; 
+    top: 20px;
+    z-index: 2;
+}
+
+.userDropdown option:hover {
+    cursor: pointer;
+}
+
+.text {
+    font-family: Avenir Next;
+    color: #4A90FF;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    border: 1px solid #E2E2EA;
+    z-index: 1;
+  }
+  .dropdown {
+    text-align: left;
+  }
+  
+ .dropdownContent option {
+    display: flex;
+    font-size: 15px;
+    border-bottom: 1px solid #E2E2EA;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: left;
+    width: 163px;
+    height: 49px;
+    cursor: pointer; 
+ }
+ .dropdownContent option:hover {
+    background-color: #4A90FF;
+ }
+
+.highlighted {
+    background-color: #E2E2EA;
+}
+
+
+.secondTable {
+    border-collapse: collapse;
+     width: 100%;
+}
+
+.alignText {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.buttonDivider {
+    display: flex;
+    flex-direction: row; 
+    padding: 8px 12px; 
+    width: 180px;
+    height: 56px;
+    background-color: white;
+    border: 1px solid #4A90FF;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3.62px;
+}
+
+.buttonContainer {
+    width: 180px;
+    height: 56px;
+}
+
+.buttonContainer button:hover {
+    cursor: pointer;
+}
+
+.name {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #343434;
+}
+
+.role {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #979799;
+}
+
+.arrow {
+    margin-left: 8px; 
+    font-size: 14px;
+    color: #4A90FF;
+}

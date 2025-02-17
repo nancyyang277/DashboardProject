@@ -1,0 +1,300 @@
+.wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+    position: relative; 
+}
+
+.wrapper a {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+.wrapper a button:hover {
+    cursor: pointer;
+}
+
+.userDropdown {
+    position: absolute;
+    right: 400px; 
+    top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; 
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%; 
+}
+
+
+.itemDetail {
+    width: 185px;
+    height: 334px;
+    top: 80px;
+    position: relative;
+    border: 1px solid #E2E2EA;
+    height: fit-content;
+    padding: 20px;
+ 
+}
+
+.endActionButton {
+    width: 124px;
+    height: 35px;
+    background-color: #4A90FF;
+    border-radius: 4.02px;
+    border: none;
+    font-family: Avenir Next #979799;
+    color: white;
+}
+
+.endActionButton:hover,
+.actionButton:hover,
+.text:hover {
+    cursor: pointer;
+}
+
+.subTitle {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Avenir Next;
+    color: #979799;
+    text-align: left;
+}
+
+.detail {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Avenir Next;
+    text-align: left;
+    margin-left: 4px;
+}
+
+.text {
+    font-family: Avenir Next;
+    color: #4A90FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    width: 124px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid #E2E2EA;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.arrow {
+    width: 12px;
+    scale: 0.7 0.6;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    border: 1px solid #E2E2EA;
+    z-index: 1;
+  }
+  .dropdown {
+    margin-top: 40px;
+    text-align: left;
+  }
+  
+ .dropdownContent option {
+    display: flex;
+    font-size: 15px;
+    border-bottom: 1px solid #E2E2EA;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: left;
+    width: 180px;
+    height: 49px;
+    cursor: pointer; 
+    
+ }
+ .dropdownContent option:hover {
+    background-color: #4A90FF;
+ }
+
+ .actionButton {
+    width: 124px;
+ }
+
+.actionButton select {
+    width: 124px;
+    height: 35px;
+    border: 1px solid #4A90FF;
+    border-radius: 4px;
+}
+
+.text {
+    font-family: Avenir Next;
+    color: #4A90FF;
+}
+
+.tableContainer {
+    top: 70px;
+    position: relative;
+}
+
+.tableTitle {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Avenir Next;
+    text-align: left;
+}
+
+.tableHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tableHeader p {
+    margin-top: 16px;
+    font-family: Avenir Next;
+    color: #979799;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.table {
+    margin-bottom: 20px;
+}
+
+.highlighted {
+    background-color: #E2E2EA;
+}
+
+.tableBody tr{
+    cursor: pointer; 
+}
+
+.tableBody td {
+    border: none;
+}
+
+.tableGeneral {
+    width: 320px;
+    border: 1px solid #E2E2EA;
+    border-radius: 4px;
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-radius: 4px;
+    border-bottom: none;
+}
+
+.tableGeneral thead {
+    background-color: #4A90FF;
+    height: 39px;
+}
+
+.tableGeneral thead tr:first-child th:first-child {
+    border-top-left-radius: 4px;
+}
+.tableGeneral thead tr:first-child th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.tableGeneral thead tr {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: Avenir Next;
+}
+
+.tableGeneral tbody tr:hover {
+    cursor: pointer;
+}
+
+.tableGeneral td,
+.tableGeneral th
+{
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid #E2E2EA;
+    padding-left: 20px;
+}
+
+.tableBody tr td {
+    height: 49px;
+}
+
+.tableGeneral tr th:not(:last-child) {
+    padding-left: 20px;
+}
+
+.tableGeneral td {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.buttonDivider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 8px 12px;
+    width: 180px;
+    height: 56px;
+    background-color: white;
+    border: 1px solid #4A90FF;
+    border-radius: 3.62px;
+}
+
+.buttonContainer {
+    width: 180px;
+    height: 56px;
+}
+
+.name {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 600;
+    color: #343434;
+}
+
+.role {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #979799;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.timeStamp {
+    width: 60px;
+    border-radius: 4px;
+}
+
+.lastCol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    border-radius: 4px;
+}
+
+.lastTimeStamp {
+    padding-right: 20px;
+}
