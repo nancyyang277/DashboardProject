@@ -5,10 +5,11 @@
     - 1. `git clone` this project and cd 
       2. Install the latest LTS version of Node.js using `nvm install --lts` and verify the version using `node -v`
       3. run `npm install` to install the packages inside `package.json` in both `/server` and `/dashboard` folder
-      4. In `/dashboard` folder run `vim .env` and add `NEXTAUTH_SECRET=secretvalue` or any random string to replace `secretvalue`
-      5. `cd` into `/dashboard` and run `npm run dev` command to start front-end pages, and you should see  **✓ Starting..**. to indicate NextJS is running
-      6. `cd` into `/server` and run `npm run dev` command to start the server, you should see Server started successfully message to indicate the server is running
-      7. Go to [localhost:3000](http://localhost:3000), you should be able to enter the application
+      4. `cd dashboard/` folder run `vim .env` and add `NEXTAUTH_SECRET=secretvalue` or any random string to replace `secretvalue`
+      5. In `dashboard` run `npm run dev` command to start front-end pages, and you should see  **✓ Starting..**. to indicate NextJS is running
+      6. `cd server/` folder and run `npm install --save-dev nodemon` to install nodemon
+      7. In `server` and run `npm run dev` command to start the server, you should see Server started successfully message to indicate the server is running
+      8. Go to [localhost:3000](http://localhost:3000), you should be able to enter the application
      
 
 - Code Architecture
