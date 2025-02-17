@@ -3,10 +3,11 @@
 - To run this project locally, simply follow the following steps
     - 1. `git clone` this project and cd 
       2. Install the latest LTS version of Node.js using `nvm install --lts` and verify the version using `node -v`
-      3. run `npm install` to install the packages inside `package.json`
-      4. `cd` into `/dashboard` and run `npm run dev` command to start front-end pages, and you should see  **✓ Starting..**. to indicate NextJS is running
-      5. `cd` into `/server` and run `npm run dev` command to start the server, you should see Server started successfully message to indicate the server is running
-      6. Go to [localhost:3000](http://localhost:3000), you should be able to enter the application
+      3. run `npm install` to install the packages inside `package.json` in both `/server` and `/dashboard` folder
+      4. In `/dashboard` folder run `vim .env` and add `NEXTAUTH_SECRET=secretvalue` or any random string to replace `secretvalue`
+      5. `cd` into `/dashboard` and run `npm run dev` command to start front-end pages, and you should see  **✓ Starting..**. to indicate NextJS is running
+      6. `cd` into `/server` and run `npm run dev` command to start the server, you should see Server started successfully message to indicate the server is running
+      7. Go to [localhost:3000](http://localhost:3000), you should be able to enter the application
      
 
 - Code Architecture
